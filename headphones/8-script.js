@@ -1,7 +1,5 @@
-document.addEventListener('DOMContentLoaded', function () {
-  var hamburger = document.querySelector('.hamburger');
-  var menu = document.querySelector('.menu');
-  hamburger.addEventListener('click', function () {
-    menu.classList.toggle('open');
-  });
-});
+let hideMenu = function (icon) {
+    icon.classList.toggle("fa-xmark");
+    icon.classList.toggle("fa-bars");
+    document.querySelector('.hideonmobile').classList.toggle('mobile-open');
+}
